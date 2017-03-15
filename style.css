@@ -13,3 +13,171 @@ path {
     stroke-width: 1;
     shape-rendering: crispEdges;
 }
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 6px 15px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#watermark {
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.9em;
+    padding: 8px 0;
+    color: #fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #f3f3f3;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+    left: 50px;
+}
+
+.controlArrow.next {
+    right: 50px;
+}
+
+.chart {
+    height: 500px;
+    width: 70%;
+    margin-right: 300px;
+}
+
+.text {
+    text-align: justify;
+    font-size: 11pt;
+    color: #333;
+    width: 93%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    height: 500px;
+    width: 27%;
+}
+
+svg.nvd3-svg {
+    overflow: visible;
+}
+
+.source {
+    text-align: left;
+    font-size: 10pt;
+    color: #f3f3f3;
+}
+
+.slide-wrapper {
+    padding-top: 40px;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
+
+.chart-wrapper {
+    width: 100%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    background-color: white;
+}
+
+.tick line {
+    display: none;
+}
+
+.source a {
+    color: white;
+}
+
+.brexit-line {
+    stroke: rgb(255, 0, 0);
+    stroke-width: 2;
+}
+
+#fp-nav > ul > li > a > span {
+    background-color: white;
+}
+
+svg > g > g > g > g > g > g.nv-groups > g {
+    stroke-width: 3px !important;
+}
+
+#retailing > svg > g > g > g.lines2Wrap.nvd3-svg > g > g > g.nv-groups > g.nv-group.nv-series-1 {
+    stroke-width: 1px !important;
+    stroke-dasharray: 5, 5;
+}
+
+.brexit-text {
+    fill: red;
+    transform: rotate(90deg);
+    font-size: 8pt;
+}
+
+#home{
+    color: white;
+    padding-top:40px;
+}
